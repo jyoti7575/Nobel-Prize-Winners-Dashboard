@@ -1,25 +1,23 @@
-**🏆 Nobel Legacy: 120 Years of Excellence
-**From Raw Data to Decision Intelligence (1901–2023)
-
+**🏆 Nobel Legacy: 120 Years of Excellence**
+From Raw Data to Decision Intelligence (1901–2023)
 An end-to-end Data Analytics & Business Intelligence project that demonstrates the complete analytics lifecycle — Descriptive, Diagnostic, Predictive, and Prescriptive Analytics — using historical Nobel Prize data.
 This project goes beyond static dashboards to deliver decision intelligence, combining Python-based data engineering with advanced Power BI analytics.
 
-**📌 Project Overview
-**The Nobel Prize represents the highest level of global achievement, yet patterns around recognition age, gender representation, and institutional dominance remain underexplored.
+**📌 Project Overview**
+The Nobel Prize represents the highest level of global achievement, yet patterns around recognition age, gender representation, and institutional dominance remain underexplored.
 This project answers four critical analytical questions:
 - What happened? → Descriptive Analytics
 - Why did it happen? → Diagnostic Analytics
 - What might happen next? → Predictive Analytics
 - What should we do about it? → Prescriptive Analytics
 
-**🧠 Key Objectives
-**- Analyze 120+ years of Nobel Prize history
+**🧠 Key Objectives**
+- Analyze 120+ years of Nobel Prize history
 - Identify structural patterns in recognition age and diversity
 - Forecast future Nobel trends
 - Translate insights into actionable, policy-oriented recommendations
 
-**🛠️ Tech Stack
-**
+**🛠️ Tech Stack**
 | Tool                       | Purpose                                |
 | -------------------------- | -------------------------------------- |
 | **Python (Pandas, NumPy)** | Data cleaning, feature engineering     |
@@ -28,15 +26,13 @@ This project answers four critical analytical questions:
 | **Power BI AI Visuals**    | Key Influencers, Forecasting           |
 | **GitHub**                 | Version control & documentation        |
 
-**📂 Dataset
-**
+**📂 Dataset**
 Source: Kaggle – Nobel Prize Winners Dataset
 Time Period: 1901–2023
 Records: 911 rows
 Final Laureates Analyzed: 904
 
-**⚙️ Data Engineering & Feature Engineering (Python)
-**
+**⚙️ Data Engineering & Feature Engineering (Python)**
 Key preprocessing steps:
 - Removed null inconsistencies and standardized categorical values
 - Created a logic-driven is_alive flag using death_date
@@ -47,9 +43,8 @@ Key preprocessing steps:
   data["is_alive"] = data["death_date"].isnull()
   data.loc[data["laureate_type"] == "Organization", "age"] = 0
 
-**📊 Dashboard Structure (Power BI)
-****🟦 Page 1 — Descriptive Analytics (What Happened?)
-**
+**📊 Dashboard Structure (Power BI)**
+**🟦 Page 1 — Descriptive Analytics (What Happened?)**
 KPIs:
 - Total Laureates: 904
 - Countries Represented: 122
@@ -68,8 +63,7 @@ DAX Measures:
 - FEMALE% = DIVIDE([FEMALE WINNERS],[TOTAL LAUREATE],0)
 - ACTIVE LEGACY% = DIVIDE([ACTIVE LEGACY],[TOTAL LAUREATE],0)
 
-**🟦 Page 2 — Diagnostic Analytics (Why Did It Happen?)
-**
+**🟦 Page 2 — Diagnostic Analytics (Why Did It Happen?)**
 Insights
 - Award age increased by +6.92 years since 1900
 - Gender age gap of 3.75 years
@@ -87,8 +81,7 @@ DAX Measures:
 - SOLO WIN% = DIVIDE([SOLO WIN],[TOTAL LAUREATE],0)
 - SHARED WIN% = DIVIDE([SHARED WIN],[TOTAL LAUREATE],0)
 
-**🟦 Page 3 — Predictive Analytics (What Might Happen?)
-**
+**🟦 Page 3 — Predictive Analytics (What Might Happen?)**
 Forecasting & Trend Analysis
 - Estimated 1000th Nobel Laureate by ~2030
 - Projected average award age ≈ 70 years by 2030
@@ -168,8 +161,8 @@ VAR RecentPeriod =
 RETURN
 DIVIDE(RecentPeriod - EarlyPeriod, EarlyPeriod, 0)
 
-**🟦 Page 4 — Prescriptive Analytics (What Should We Do?)
-**This page transforms insights into actions.
+**🟦 Page 4 — Prescriptive Analytics (What Should We Do?)**
+This page transforms insights into actions.
 Prescriptive KPIs
 - Early Career % → 5.53%
 - Diversity Parity vs Target (20%) → 14.69%
@@ -216,15 +209,13 @@ VAR Top5 =
 RETURN
 DIVIDE(Top5, Total, 0)
 
-**🧠 Key Takeaways
-**
+**🧠 Key Takeaways**
 - Nobel recognition is increasingly late-career, limiting early innovation incentives
 - Female representation remains significantly below parity targets
 - Institutional concentration restricts global research equity
 - Data-driven interventions can guide funding, diversity, and policy reforms
 
-**🎯 Final Outcome
-**
+**🎯 Final Outcome**
 This project delivers a decision intelligence framework that demonstrates how analytics can evolve from:
 Data → Insight → Prediction → Prescription
 
@@ -233,12 +224,11 @@ It is designed for:
 - Analytics interviews
 - Executive-style storytelling portfolios
 
-**🤝 Feedback & Opportunities
-**
+**🤝 Feedback & Opportunities**
 I welcome feedback from the data community and am open to opportunities where analytics drives strategic decisions, not just reporting.
 
-**🔖 Tags
-**Power BI, Python, DAX, Data Analytics, Prescriptive Analytics, Decision Intelligence Dashboard, Design, Data Storytelling
+**🔖 Tags**
+Power BI, Python, DAX, Data Analytics, Prescriptive Analytics, Decision Intelligence Dashboard, Design, Data Storytelling
 
 PowerBI: https://app.powerbi.com/links/9rfcv9L3nk?ctid=1e3bab2c-ff49-4d6c-827a-5017e6fd859c&pbi_source=linkShare
 LinkedIn: https://www.linkedin.com/in/jyotigupta-da/
